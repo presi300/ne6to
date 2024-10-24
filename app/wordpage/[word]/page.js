@@ -23,8 +23,12 @@ export default function Page({ params }) {
               <Link className="text-blue-300 hover:underline" href="Computers">
                 компютри
               </Link>
-              , телефони) на езиковите и текстови съобщения те трябва да бъдат
-              пратени от техния изпращач до техния получател.
+              ,{" "}
+              <Link className="text-blue-300 hover:underline" href="Smartphone">
+                телефони
+              </Link>
+              ) на езиковите и текстови съобщения те трябва да бъдат пратени от
+              техния изпращач до техния получател.
             </div>
             <br></br>
             <div>
@@ -40,8 +44,12 @@ export default function Page({ params }) {
               <Link className="text-blue-300 hover:underline" href="Computers">
                 computers
               </Link>
-              , telephones) of language and text messages, they must be sent
-              from the technique, the sender to the receiving technique.
+              ,{" "}
+              <Link className="text-blue-300 hover:underline" href="Smartphone">
+                telephones
+              </Link>
+              ) of language and text messages, they must be sent from the
+              technique, the sender to the receiving technique.
             </div>
           </>
         );
@@ -56,12 +64,19 @@ export default function Page({ params }) {
               поредица такива операции позволява компютърът да се използва за
               решаване на теоретично всяка изчислителна/логическа задача. Тези
               аритметични и логически операции са също така част от програмен
-              код (компютърната програма),с който работят компютрите. Целта е
-              обработката на въведена информация (и компютърни данни), най-често
-              дигитализирана или представена в цифров вид, чийто резултат може
-              да се изведе в най-общо казано използваема форма. Първата
-              изчислителна машина с изцяло електронен изчислителен блок и с
-              отделна памет е конструирана от{" "}
+              код (
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Computer_program"
+              >
+                компютърната програма
+              </Link>
+              ),с който работят компютрите. Целта е обработката на въведена
+              информация (и компютърни данни), най-често дигитализирана или
+              представена в цифров вид, чийто резултат може да се изведе в
+              най-общо казано използваема форма. Първата изчислителна машина с
+              изцяло електронен изчислителен блок и с отделна памет е
+              конструирана от{" "}
               <Link
                 className="text-blue-300 hover:underline"
                 href="John_Atanasoff"
@@ -87,9 +102,15 @@ export default function Page({ params }) {
               operations. The ability of the device to perform a series of such
               operations allows the computer to be used to solve theoretically
               any computational/logical task. These arithmetic and logical
-              operations are also part of the program code (the computer
-              program) that computers work with. The purpose is the processing
-              of input information (and computer data), most often digitized or
+              operations are also part of the program code (the{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Computer_program"
+              >
+                computer program
+              </Link>
+              ) that computers work with. The purpose is the processing of input
+              information (and computer data), most often digitized or
               represented in digital form, the result of which can be output in
               a generally usable form. The first computing machine with an
               all-electronic computing unit and separate memory was constructed
@@ -172,157 +193,242 @@ export default function Page({ params }) {
             </div>
           </>
         );
-      case "Компютърна програма":
+
+      case "Computer_program":
         return (
-          <div>
-            Компютърната програма или още софтуерна програма, или накратко
-            програма е съвкупност от инструкции към компютъра, които трябва да
-            дадат някакъв определен изходен резултат. Компютърът изисква
-            програмите да функционират, обикновено изпълнявайки програмните
-            инструкции в централния процесор. Програмата има изпълнителна форма,
-            която компютърът директно използва, за да изпълни инструкциите,
-            зададени от програмата. Тази същата програма има и четивна за човека
-            част, наречена сорс код, от който изпълнимите програми се
-            компилират, като сорс кодът дава възможност на програмиста да
-            изследва протичането на инструкциите или да разработва алгоритмите.
-          </div>
+          <>
+            <div>
+              Компютърната програма или още софтуерна програма, или накратко
+              програма е съвкупност от инструкции към компютъра, които трябва да
+              дадат някакъв определен изходен резултат. Компютърът изисква
+              програмите да функционират, обикновено изпълнявайки програмните
+              инструкции в централния процесор. Програмата има изпълнителна
+              форма, която компютърът директно използва, за да изпълни
+              инструкциите, зададени от програмата. Тази същата програма има и
+              четивна за човека част, наречена{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Source_code"
+              >
+                сорс код
+              </Link>
+              , от който изпълнимите програми се компилират, като сорс кодът
+              дава възможност на програмиста да изследва протичането на
+              инструкциите или да разработва{" "}
+              <Link className="text-blue-300 hover:underline" href="Algorithms">
+                алгоритми
+              </Link>
+              .
+            </div>{" "}
+            <br></br>
+            <div>
+              A computer program or software program, or program for short, is a
+              set of instructions to the computer that must produce some
+              specific output. A computer requires programs to function, usually
+              executing the program instructions in the central processing unit.
+              The program has an executable form that the computer directly uses
+              to execute the instructions given by the program. This same
+              program also has a human-readable part called{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Source_code"
+              >
+                source code
+              </Link>{" "}
+              from which executable programs are compiled, the source code
+              enabling the programmer to examine the flow of instructions or
+              develop {""}
+              <Link className="text-blue-300 hover:underline" href="Algorithms">
+                algorithms
+              </Link>
+              .
+            </div>
+          </>
         );
-      case "Computer program":
+
+      case "Source_code":
         return (
-          <div>
-            A computer program or software program, or program for short, is a
-            set of instructions to the computer that must produce some specific
-            output. A computer requires programs to function, usually executing
-            the program instructions in the central processing unit. The program
-            has an executable form that the computer directly uses to execute
-            the instructions given by the program. This same program also has a
-            human-readable part called source code from which executable
-            programs are compiled, the source code enabling the programmer to
-            examine the flow of instructions or develop algorithms.зика.
-          </div>
+          <>
+            <div>
+              Сорс код или изходният код е сбор от инструкции (заедно с
+              коментарите), написан на разбираем за човека език за програмиране
+              (може и на повече от един език за програмиране) обикновено като
+              текст. Изходният код позволява модификация на компютърната
+              програма, разглеждане на начина, по който тя работи, откриване на
+              грешки и други действия. Той трябва да се компилира, за да се
+              получи програма на машинен език, която може да се изпълнява от{" "}
+              {""}
+              <Link className="text-blue-300 hover:underline" href="Algorithms">
+                хардуер
+              </Link>
+              а. Друг вариант е да се ползва интерпретатор, който да анализира и
+              да изпълни кода на момента. Повечето компютърни програми не се
+              разпространяват с техния изходен код, а във вид на изпълними
+              файлове. Ако кодът е включен, той е полезен за потребителя,
+              програмиста или системния администратор, за да разбере действието
+              му, или за да го промени или допълни.
+            </div>
+            <br></br>
+            <div>
+              Source code or source code is a set of instructions (along with
+              comments) written in a human-understandable programming language
+              (maybe in more than one programming language) usually as text.
+              Source code allows modification of a computer program, examining
+              how it works, detecting errors, and other actions. It must be
+              compiled to produce a machine language program that can be
+              executed by the{" "}
+              <Link className="text-blue-300 hover:underline" href="Hardware">
+                hardware
+              </Link>
+              . Another option is to use an interpreter to parse and execute the
+              current code. Most computer programs are not distributed with
+              their source code, but in the form of executable files. If the
+              code is included, it is useful for the user, programmer, or system
+              administrator to understand its operation, or to modify or
+              supplement it.
+            </div>
+          </>
         );
-      case "Сорс код":
-        return (
-          <div>
-            Сорс код или изходният код е сбор от инструкции (заедно с
-            коментарите), написан на разбираем за човека език за програмиране
-            (може и на повече от един език за програмиране) обикновено като
-            текст. Изходният код позволява модификация на компютърната програма,
-            разглеждане на начина, по който тя работи, откриване на грешки и
-            други действия. Той трябва да се компилира, за да се получи програма
-            на машинен език, която може да се изпълнява от хардуера. Друг
-            вариант е да се ползва интерпретатор, който да анализира и да
-            изпълни кода на момента. Повечето компютърни програми не се
-            разпространяват с техния изходен код, а във вид на изпълними
-            файлове. Ако кодът е включен, той е полезен за потребителя,
-            програмиста или системния администратор, за да разбере действието
-            му, или за да го промени или допълни.
-          </div>
-        );
-      case "Source code":
-        return (
-          <div>
-            Source code or source code is a set of instructions (along with
-            comments) written in a human-understandable programming language
-            (maybe in more than one programming language) usually as text.
-            Source code allows modification of a computer program, examining how
-            it works, detecting errors, and other actions. It must be compiled
-            to produce a machine language program that can be executed by the
-            hardware. Another option is to use an interpreter to parse and
-            execute the current code. Most computer programs are not distributed
-            with their source code, but in the form of executable files. If the
-            code is included, it is useful for the user, programmer, or system
-            administrator to understand its operation, or to modify or
-            supplement it.
-          </div>
-        );
-      case "Хардуер":
-        return (
-          <div>
-            Произлиза от английската дума hardware (означава железария;
-            техническа апаратура; изчислителна техника; устройства, изграждащи
-            по-голям апарат или машина). Преди появата на тази дума в българския
-            език се е използвал терминът апаратно осигуряване. Хардуерът,
-            изграждащ смартфона или компютъра, се състои от процесор, дънна
-            платка, видеокарта, RAM памет, захранващ блок, твърд диск/ССД,
-            компютърна кутия и входно-изходни устройства. Съответно асемблерният
-            език е езикът за програмиране, който е най-близо до хардуера.
-          </div>
-        );
+
       case "Hardware":
         return (
-          <div>
-            The hardware that makes up the smartphone or computer consists of a
-            processor, motherboard, video card, RAM memory, power supply unit,
-            hard disk/SSD, computer case and input/output devices. Accordingly,
-            assembly language is the programming language closest to the
-            hardware.
-          </div>
+          <>
+            <div>
+              Произлиза от английската дума hardware (означава железария;
+              техническа апаратура; изчислителна техника; устройства, изграждащи
+              по-голям апарат или машина). Преди появата на тази дума в
+              българския език се е използвал терминът апаратно осигуряване.
+              Хардуерът, изграждащ{" "}
+              <Link className="text-blue-300 hover:underline" href="Smartphone">
+                смартфон
+              </Link>
+              а или{" "}
+              <Link className="text-blue-300 hover:underline" href="Computers">
+                компютър
+              </Link>
+              а, се състои от процесор, дънна платка, видеокарта, RAM памет,
+              захранващ блок, твърд диск/ССД, компютърна кутия и входно-изходни
+              устройства. Съответно асемблерният език е езикът за{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Computer_program"
+              >
+                прорграм
+              </Link>
+              иране, който е най-близо до хардуера.
+            </div>{" "}
+            <br></br>
+            <div>
+              The hardware that makes up the{" "}
+              <Link className="text-blue-300 hover:underline" href="Smartphone">
+                smartphone
+              </Link>{" "}
+              or{" "}
+              <Link className="text-blue-300 hover:underline" href="Computers">
+                computer
+              </Link>{" "}
+              consists of a processor, motherboard, video card, RAM memory,
+              power supply unit, hard disk/SSD, computer case and input/output
+              devices. Accordingly, assembly language is the{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Computer_program"
+              >
+                program
+              </Link>
+              ming language closest to the hardware.
+            </div>
+          </>
         );
-      case "Смартфон":
-        return (
-          <div>
-            Смартфонът еволюира от мобилния телефон, като съвместява функциите
-            на пренос на глас и кратки съобщения с по-разширени компютърни
-            функции като обработка на данни, интелигентност и дисплей в
-            телефоните. Смартфоните продължават да се развиват. Следващите
-            поколения смартфони уголемяват размерите си и подобряват камерата на
-            предишното поколение. Тази тенденция се запазва и до днес.
-          </div>
-        );
+
       case "Smartphone":
         return (
-          <div>
-            The smartphone evolved from the mobile phone by combining voice and
-            short messaging functions with more advanced computing functions
-            such as data processing, intelligence and display in phones.
-            Smartphones continue to evolve. The next generations of smartphones
-            increase their size and improve the camera of the previous
-            generation. This trend continues to this day.
-          </div>
+          <>
+            <div>
+              Смартфонът еволюира от мобилния телефон, като съвместява функциите
+              на пренос на глас и кратки{" "}
+              <Link className="text-blue-300 hover:underline" href="Messages">
+                съобщения
+              </Link>{" "}
+              с по-разширени компютърни функции като обработка на данни,
+              интелигентност и дисплей в телефоните. Смартфоните продължават да
+              се развиват. Следващите поколения смартфони уголемяват размерите
+              си и подобряват камерата на предишното поколение. Тази тенденция
+              се запазва и до днес.
+            </div>
+            <br></br>
+            <div>
+              The smartphone evolved from the mobile phone by combining voice
+              and short{" "}
+              <Link className="text-blue-300 hover:underline" href="Messages">
+                messaging
+              </Link>{" "}
+              functions with more advanced computing functions such as data
+              processing, intelligence and display in phones. Smartphones
+              continue to evolve. The next generations of smartphones increase
+              their size and improve the camera of the previous generation. This
+              trend continues to this day.
+            </div>
+          </>
         );
-      case "Съобщения":
-        return (
-          <div>
-            През 1982 г. Европейската конференция на пощенската и
-            телекомуникационна администрация CEPT group одобрява план, изискващ
-            услугите, предоставяни от обществените информационни мрежи, да бъдат
-            достъпни и за мобилните телефони. В резултат на това от 1984 г.
-            група инженери, сред които Фридхелм Хилебранд (Deutsche Telekom),
-            Бернар Жилбер (France Télécom), Фин Тросбю (Telenor), Кевин Холи
-            (Cellnet), Иън Харис (Vodafone) започват да развиват концепцията за
-            SMS, като поставят и границата от 160 знака за първите съобщения,
-            смятайки ги за „напълно достатъчни“. Трябва да изминат цели 8
-            години, преди да се появи първото SMS съобщение. На 3 декември 1992
-            г. Нийл Папуърт (Neil Papworth), тестов инженер от Sema Group
-            (по-късно Mavenir Systems), изпраща първото в света SMS съобщение
-            чрез персоналния си компютър (мобилните телефони по онова време не
-            са притежавали опция за текстови съобщения) по GSM-мрежата на
-            Vodafon във Великобритания до мобилния телефон „Orbitel 901“ на своя
-            приятел Ричард Ярвис, поздравявайки го с „Весела Коледа“. Това
-            променя коренно начина по който хората общуваме днес.
-          </div>
-        );
+
       case "Messages":
         return (
-          <div>
-            In 1982, the European Conference of Postal and Telecommunications
-            Administrations CEPT group approved a plan requiring services
-            provided by public information networks to be accessible to mobile
-            phones. As a result, since 1984, a group of engineers including
-            Friedhelm Hillebrand (Deutsche Telekom), Bernard Gilbert (France
-            Télécom), Finn Trosby (Telenor), Kevin Holley (Cellnet), Ian Harris
-            (Vodafone) began to develop the SMS concept , also setting a limit
-            of 160 characters for first messages, considering them "perfectly
-            sufficient". A full 8 years must pass before the first SMS message
-            appears. On December 3, 1992, Neil Papworth, a test engineer at Sema
-            Group (later Mavenir Systems), sent the world's first SMS message
-            via his personal computer (mobile phones at the time did not have a
-            text messaging option). over the Vodafone UK GSM network to the
-            'Orbitel 901' mobile phone of his friend Richard Jarvis, wishing him
-            a 'Merry Christmas'. This fundamentally changes the way people
-            communicate today.
-          </div>
+          <>
+            <div>
+              През 1982 г. Европейската конференция на пощенската и
+              телекомуникационна администрация CEPT group одобрява план,
+              изискващ услугите, предоставяни от обществените информационни
+              мрежи, да бъдат достъпни и за мобилните телефони. В резултат на
+              това от 1984 г. група инженери, сред които Фридхелм Хилебранд
+              (Deutsche Telekom), Бернар Жилбер (France Télécom), Фин Тросбю
+              (Telenor), Кевин Холи (Cellnet), Иън Харис (Vodafone) започват да
+              развиват концепцията за SMS, като поставят и границата от 160
+              знака за първите съобщения, смятайки ги за „напълно достатъчни“.
+              Трябва да изминат цели 8 години, преди да се появи първото SMS
+              съобщение. На 3 декември 1992 г. Нийл Папуърт (Neil Papworth),
+              тестов инженер от Sema Group (по-късно Mavenir Systems), изпраща
+              първото в света SMS съобщение чрез персоналния си компютър
+              (мобилните телефони по онова време не са притежавали опция за
+              текстови съобщения) по GSM-мрежата на Vodafon във Великобритания
+              до мобилния телефон „Orbitel 901“ на своя приятел Ричард Ярвис,
+              поздравявайки го с „Весела Коледа“. Това променя коренно начина по
+              който хората{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Communication"
+              >
+                общуваме
+              </Link>{" "}
+              днес.
+            </div>
+            <br></br>
+            <div>
+              In 1982, the European Conference of Postal and Telecommunications
+              Administrations CEPT group approved a plan requiring services
+              provided by public information networks to be accessible to mobile
+              phones. As a result, since 1984, a group of engineers including
+              Friedhelm Hillebrand (Deutsche Telekom), Bernard Gilbert (France
+              Télécom), Finn Trosby (Telenor), Kevin Holley (Cellnet), Ian
+              Harris (Vodafone) began to develop the SMS concept , also setting
+              a limit of 160 characters for first messages, considering them
+              "perfectly sufficient". A full 8 years must pass before the first
+              SMS message appears. On December 3, 1992, Neil Papworth, a test
+              engineer at Sema Group (later Mavenir Systems), sent the world's
+              first SMS message via his personal computer (mobile phones at the
+              time did not have a text messaging option). over the Vodafone UK
+              GSM network to the 'Orbitel 901' mobile phone of his friend
+              Richard Jarvis, wishing him a 'Merry Christmas'. This
+              fundamentally changes the way people{" "}
+              <Link
+                className="text-blue-300 hover:underline"
+                href="Communication"
+              >
+                communicate
+              </Link>{" "}
+              today.
+            </div>
+          </>
         );
       case "Писма":
         return (
@@ -589,27 +695,28 @@ export default function Page({ params }) {
             airplanes and helicopters.
           </div>
         );
-      case "Алгоритми":
-        return (
-          <div>
-            При все че няма общоприета формална дефиниция на алгоритъм,
-            неформално понятието може да се определи като „набор от правила,
-            които точно дефинират някаква поредица от операции“. Това
-            определение обхваща всички компютърни програми, включително тези,
-            които не извършват числени изчисления, стига те да прекратяват
-            работа след краен брой операции.
-          </div>
-        );
+
       case "Algorithms":
         return (
-          <div>
-            Although there is no generally accepted formal definition of an
-            algorithm, informally the term can be defined as "a set of rules
-            that precisely define some sequence of operations". This definition
-            covers all computer programs, including those that do not perform
-            numerical calculations, as long as they terminate after a finite
-            number of operations.
-          </div>
+          <>
+            <div>
+              При все че няма общоприета формална дефиниция на алгоритъм,
+              неформално понятието може да се определи като „набор от правила,
+              които точно дефинират някаква поредица от операции“. Това
+              определение обхваща всички компютърни програми, включително тези,
+              които не извършват числени изчисления, стига те да прекратяват
+              работа след краен брой операции.
+            </div>{" "}
+            <br></br>
+            <div>
+              Although there is no generally accepted formal definition of an
+              algorithm, informally the term can be defined as "a set of rules
+              that precisely define some sequence of operations". This
+              definition covers all computer programs, including those that do
+              not perform numerical calculations, as long as they terminate
+              after a finite number of operations.
+            </div>
+          </>
         );
       default:
         return <div>404 Думата не съществува</div>;
